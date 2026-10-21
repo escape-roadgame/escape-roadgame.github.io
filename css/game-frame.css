@@ -1,0 +1,718 @@
+/* ==================== Spacing for Game Frame & Top Ad Container ==================== */
+.header-ad-container {
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
+
+.game_play {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.flop-game-row,
+.game_play .flop-game-row {
+    margin-top: 10px !important;
+    margin-bottom: 16px !important;
+}
+
+.game_play .game-frame-container {
+    margin-top: 0 !important;
+}
+
+/* 120x600 Side Skyscraper Ads Layout */
+.game-showcase-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Căn chỉnh trên dưới vào giữa */
+    gap: 18px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.game-showcase-wrapper .game-frame-container {
+    flex: 1 1 1000px;
+    max-width: 1000px;
+    margin: 0 !important;
+}
+
+.side-ad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    min-width: 120px;
+    flex-shrink: 0;
+}
+
+.side-ad-label {
+    font-size: 9.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #64748b;
+    margin-bottom: 6px;
+    user-select: none;
+    line-height: 1;
+}
+
+.side-ad-120x600 {
+    width: 120px;
+    height: 600px;
+    background: linear-gradient(180deg, rgba(19, 26, 41, 0.85) 0%, rgba(27, 36, 56, 0.85) 100%);
+    border: 1px dashed rgba(255, 255, 255, 0.16);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.side-ad-120x600:hover {
+    border-color: rgba(255, 71, 87, 0.4);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5), 0 0 14px rgba(195, 7, 63, 0.2);
+}
+
+.side-ad-120x600 ins.adsbygoogle {
+    display: block;
+    width: 120px;
+    height: 600px;
+}
+
+/* Allow container to fit 120px + 1000px + 120px + gaps comfortably */
+.game_play .container {
+    max-width: 1360px !important;
+    width: 100%;
+}
+
+@media (max-width: 1320px) {
+    .side-ad-container {
+        display: none;
+    }
+    .game_play .container {
+        max-width: 1050px !important;
+    }
+}
+
+.game-frame-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto 16px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.game-frame-container .game {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 24px;
+    background: #1e293b;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), 0 0 24px rgba(195, 7, 63, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-sizing: border-box;
+}
+
+.game-frame-container iframe#iframehtml5 {
+    width: 100%;
+    height: 600px;
+    display: block;
+    border-radius: 14px;
+    border: none;
+    background: #000;
+}
+
+@media (max-width: 1040px) {
+    .game-frame-container {
+        padding: 0 16px;
+    }
+    .game-frame-container iframe#iframehtml5 {
+        height: 520px;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-frame-container {
+        padding: 0 12px;
+    }
+    .game-frame-container iframe#iframehtml5 {
+        height: 440px;
+    }
+}
+
+@media (max-width: 576px) {
+    .game-frame-container {
+        padding: 0 8px;
+    }
+    .game-frame-container .game {
+        padding: 10px;
+        border-radius: 16px;
+    }
+    .game-frame-container iframe#iframehtml5 {
+        height: 340px;
+        border-radius: 10px;
+    }
+}
+
+/* ==================== Index Page 200x200 Game Grids ==================== */
+.index-games-section {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.index-section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 14px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.index-section-header svg {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.index-section-title {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.index-section-title--new {
+    background: linear-gradient(135deg, #ffd32a 0%, #ff9f1a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.index-section-title--hot {
+    background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.index-games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-auto-flow: dense;
+    justify-content: center;
+    gap: 16px;
+}
+
+.index-game-card {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #172133;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.index-game-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+.index-game-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 6px 7px 6px;
+    background: linear-gradient(180deg, transparent 0%, rgba(11, 16, 26, 0.95) 100%);
+    color: #ffffff;
+    font-size: 11.5px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s ease;
+}
+
+.index-game-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.6), 0 0 16px rgba(195, 7, 63, 0.45);
+    border-color: rgba(255, 71, 87, 0.7);
+    z-index: 10;
+}
+
+.index-game-card:hover img {
+    transform: scale(1.08);
+}
+
+.index-game-card:hover .index-game-badge {
+    color: #ffd32a;
+}
+
+/* 300x250 Grid Ad: spans 2x2 grid columns (316x316px) with centered ad, borderless */
+.index-grid-ad-wrapper {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+    max-width: 316px;
+    max-height: 316px;
+    min-width: 300px;
+    min-height: 250px;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.index-grid-ad-wrapper:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.index-grid-ad-300x250 {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(19, 26, 41, 0.85) 0%, rgba(27, 36, 56, 0.85) 100%);
+    border: 1px dashed rgba(255, 255, 255, 0.16);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.index-grid-ad-300x250:hover {
+    border-color: rgba(255, 71, 87, 0.35);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+
+.index-grid-ad-300x250 ins.adsbygoogle {
+    display: block;
+    width: 300px;
+    height: 250px;
+}
+
+/* 336x280 Grid Ad: spans 2x2 grid columns (top-left) with centered ad, borderless */
+.index-grid-ad-wrapper--336 {
+    max-width: 350px;
+    min-width: 336px;
+    height: 316px;
+}
+
+.index-grid-ad-336x280 {
+    width: 336px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(19, 26, 41, 0.85) 0%, rgba(27, 36, 56, 0.85) 100%);
+    border: 1px dashed rgba(255, 255, 255, 0.16);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.index-grid-ad-336x280:hover {
+    border-color: rgba(255, 71, 87, 0.35);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+
+.index-grid-ad-336x280 ins.adsbygoogle {
+    display: block;
+    width: 336px;
+    height: 280px;
+}
+
+@media (max-width: 500px) {
+    .index-games-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .index-game-card {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border-radius: 14px;
+    }
+    .index-grid-ad-wrapper {
+        width: 100%;
+        height: auto;
+        min-height: 260px;
+        padding: 5px 0;
+        grid-column: span 2;
+        grid-row: auto;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+    .index-grid-ad-wrapper--336 {
+        min-width: unset;
+        min-height: 290px;
+    }
+    .index-grid-ad-336x280 {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* ==================== Index 970x90 Banner Ad Container (Between Grids, Borderless) ==================== */
+.index-banner-ad-container {
+    max-width: 1400px;
+    margin: 10px auto 35px auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.index-banner-ad-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.index-banner-ad-wrapper:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.index-banner-ad-970x90 {
+    width: 970px;
+    height: 90px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(19, 26, 41, 0.85) 0%, rgba(27, 36, 56, 0.85) 100%);
+    border: 1px dashed rgba(255, 255, 255, 0.16);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.index-banner-ad-970x90:hover {
+    border-color: rgba(255, 71, 87, 0.35);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+
+.index-banner-ad-970x90 ins.adsbygoogle {
+    display: block;
+    width: 970px;
+    height: 90px;
+    max-width: 100%;
+}
+
+@media (max-width: 1020px) {
+    .index-banner-ad-wrapper {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .index-banner-ad-container {
+        margin: 10px auto 25px auto;
+        padding: 0 10px;
+    }
+    .index-banner-ad-wrapper {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+    }
+}
+
+/* ==================== Index 970x250 Billboard Ad Container (Below Game Frame) ==================== */
+.index-billboard-ad-container {
+    max-width: 1400px;
+    margin: 20px auto 35px auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.index-billboard-ad-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.index-billboard-ad-wrapper:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.index-billboard-ad-970x250 {
+    width: 970px;
+    height: 250px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(19, 26, 41, 0.85) 0%, rgba(27, 36, 56, 0.85) 100%);
+    border: 1px dashed rgba(255, 255, 255, 0.16);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.index-billboard-ad-970x250:hover {
+    border-color: rgba(255, 71, 87, 0.35);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+
+.index-billboard-ad-970x250 ins.adsbygoogle {
+    display: block;
+    width: 970px;
+    height: 250px;
+    max-width: 100%;
+}
+
+@media (max-width: 1020px) {
+    .index-billboard-ad-wrapper {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .index-billboard-ad-container {
+        margin: 15px auto 25px auto;
+        padding: 0 10px;
+    }
+}
+
+/* ==================== About Section (Burnout Drift SEO) ==================== */
+.index-about-section {
+    max-width: 1400px;
+    margin: 50px auto 40px auto;
+    padding: 36px;
+    background: #131a29;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5), 0 0 24px rgba(195, 7, 63, 0.15);
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.7;
+    box-sizing: border-box;
+}
+
+.index-about-title {
+    font-size: 26px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.3px;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #ffd32a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.index-about-lead {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #e2e8f0;
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 4px solid #ff4757;
+    padding: 16px 20px;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 28px;
+}
+
+.index-about-lead strong {
+    color: #ffd32a;
+}
+
+.index-about-heading {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 28px 0 14px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.index-about-heading::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 18px;
+    background: #ff4757;
+    border-radius: 3px;
+}
+
+.index-about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.index-about-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 20px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.index-about-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 71, 87, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.index-about-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    font-weight: 800;
+    color: #ff4757;
+}
+
+.index-about-card p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.index-about-table-wrap {
+    overflow-x: auto;
+    margin: 18px 0 26px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.index-about-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.index-about-table th {
+    background: rgba(255, 71, 87, 0.15);
+    color: #ffd32a;
+    font-weight: 800;
+    text-align: left;
+    padding: 12px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.index-about-table td {
+    padding: 12px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    color: #cbd5e1;
+}
+
+.index-about-table kbd {
+    display: inline-block;
+    padding: 3px 8px;
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    color: #f1f5f9;
+    font-family: monospace;
+    font-size: 12px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.index-faq-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.index-faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 16px 20px;
+}
+
+.index-faq-item h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f1f5f9;
+}
+
+.index-faq-item p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .index-about-section {
+        padding: 22px 16px;
+        margin: 30px 10px;
+    }
+    .index-about-title {
+        font-size: 21px;
+    }
+}
+
